@@ -1,0 +1,12 @@
+<article class="post_details">
+  <h2 class="post_title">Post # <%= post.id %></h2>
+  <% if (show_full_post) %>
+    <p><%= post.text %></p>
+  <% else %>
+    <p><%= truncate(post.text, length:250, omission: "...") %></p>
+  <% end %>
+  <div class="post_stats">
+    <p>Comments: <%= post.comments_counter || 0 %></p>
+    <p>Likes: <%= post.likes_counter || 0 %></p>
+  </div>
+</article>
