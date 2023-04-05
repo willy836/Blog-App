@@ -1,4 +1,6 @@
 <section>
   <h1>List of users</h1>
-  <%= render partial: "shared/user", collection: @users, as: :user %>
+  <% @users.each do |user| %>
+    <%= render "shared/user", user: user %>
+  <% end %>
 </section>

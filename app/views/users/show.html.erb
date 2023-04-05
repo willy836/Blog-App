@@ -1,5 +1,5 @@
 <article>
-  <%= render partial: "shared/user", locals: { user: @user } %>
+  <%= render "shared/user", user: @user %>
   <div class="user_bio">
     <h2>Bio</h2>
     <p><%= @user.bio %></p>
