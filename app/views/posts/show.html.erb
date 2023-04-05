@@ -1,1 +1,8 @@
-<h2>Here is a post for a given user</h2>
+<article class="full_post">
+  <%= render partial: "shared/post", locals: { post: @post, show_full_post: true } %>
+  <div class="all_comments">
+    <% @post.comments.each do |comment| %>
+      <%= render "shared/comment", comment: comment %>
+    <% end %>
+  </div>
+</article>

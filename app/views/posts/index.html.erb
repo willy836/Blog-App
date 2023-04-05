@@ -1,1 +1,15 @@
-<h2>Here is a list of posts for a given user</h2>
+<section>
+  <h2>List of posts for a given user</h2>
+  <%= render "shared/user", user: @user %>
+  <% @posts.each do |post| %>
+    <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "post_partial" do %>
+      <%= render partial: "shared/post", locals: { post: post, show_full_post: false } %>
+    <% end %>
+    <div class="recent_comments">
+      <% post.show_recent_comments.each do |comment| %>
+        <%= render "shared/comment", comment: comment %>
+      <% end %>
+    </div>
+  <% end %>
+  <button class="btn">Pagination</button>
+</section>
