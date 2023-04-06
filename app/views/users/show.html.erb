@@ -1,1 +1,11 @@
-<h2>Here is one user</h2>
+<article class="user-stats">
+  <%= render "shared/user", user: @user %>
+  <div class="user_bio">
+    <h2>Bio</h2>
+    <p><%= @user.bio %></p>
+  </div>
+  <% @posts.each do |post| %>
+    <%= render partial: "shared/post", locals: { post: post, show_full_post: false }  %>
+  <% end %>
+  <button class="btn"><%= link_to "See all posts", user_posts_path(@user) %></button>
+</article>
