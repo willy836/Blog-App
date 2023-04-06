@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post.author_id = current_user.id
     if @post.save
       flash[:success] = 'Successfully created a post!'
-      redirect_to user_posts_path(current_user.id)
+      redirect_to user_posts_path(current_user)
     else
       flash[:error] = 'Failed to create a post.'
       render :new
