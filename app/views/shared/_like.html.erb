@@ -1,0 +1,7 @@
+<article class="add-like">
+  <%= form_with model: @like, url: user_post_likes_path(user_id: @user.id, post_id: @post.id), local: true, scope: :like do |form| %>
+    <div class="like-btn">
+      <%= form.submit "Add like", class: "btn" %>
+    </div>
+  <% end %>
+</article>
