@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 .list-heading {
   margin: 10px 20px;
 }
@@ -19,7 +24,11 @@
   flex-direction: row;
   gap: 50px;
   align-items: center;
-  margin: 0 20px;
+}
+
+.user-article {
+  width: 97%;
+  margin: 0 auto;
 }
 
 .user-img {
@@ -29,7 +38,9 @@
 }
 
 .name-posts {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid #555;
   padding: 0 15px;
@@ -53,11 +64,14 @@
   margin: 20px;
 }
 
-.post_details {
-  width: 80%;
-  margin: 0 20px;
-  border: 2px solid #555;
+.post-article {
+  width: 97%;
+  margin: 0 auto;
+  background: #ebe6e6;
+  color: #f0e6e6;
+  border-radius: 10px;
   margin-top: 20px;
+  padding: 10px;
 }
 
 .btn {
@@ -95,4 +109,23 @@
 
 .submit-btn {
   margin-left: 500px;
+}
+
+.btns-container {
+  width: 97%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+.like-btn {
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.comment-link-btn {
+  margin: 5px 0;
+  padding: 8px;
+  border: 2px solid #333;
+  border-radius: 5px;
 }

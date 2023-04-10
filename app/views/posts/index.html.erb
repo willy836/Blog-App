@@ -2,9 +2,7 @@
   <h2 class="list-heading">List of posts for a given user</h2>
   <%= render "shared/user", user: @user %>
   <% @posts.each do |post| %>
-    <%= link_to user_post_path(post.author.id, post.id) do %>
-      <%= render partial: "shared/post", locals: { post: post, show_full_post: false } %>
-    <% end %>
+    <%= render partial: "shared/post", locals: { post: post, show_full_post: false } %>
     <div class="recent_comments">
       <% post.show_recent_comments.each do |comment| %>
         <%= render "shared/comment", comment: comment %>

@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+image1 = 'https://user-images.githubusercontent.com/79058364/150398546-6d9d32a8-dc4c-4e26-a6ff-0ff0b4eafe9f.jpg'
+image2 = 'https://user-images.githubusercontent.com/79058364/150398981-d7619766-6bf3-4878-9bc7-b0ef2d33f815.jpg'
+image3 = 'https://user-images.githubusercontent.com/79058364/150375449-6871e044-0e98-4378-8651-08d29f8adbf8.jpg'
+image4 = 'https://user-images.githubusercontent.com/79058364/150375487-d5a82b30-cef1-45b1-be4f-28413e8839a7.jpg'
+image5 = 'https://user-images.githubusercontent.com/79058364/150398570-de44d578-8f17-4150-b7b4-15c085e7d627.jpg'
+
 lorem_bio = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sunt harum adipisci vero 
 possimus recusandae fugiat facilis provident? Doloremque.'
 lorem_post = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum reprehenderit labore tempore, 

@@ -1,6 +1,9 @@
 <article class="full_post">
   <%= render partial: "shared/post", locals: { post: @post, show_full_post: true } %>
-  <%= render "shared/like" %>
+  <div class="btns-container">
+    <%= render "shared/like" %>
+    <%= link_to "Comment", new_user_post_comment_path(@post.author, @post), class: "comment-link-btn" %>
+  </div>
   <div class="all_comments">
     <% @post.comments.each do |comment| %>
       <%= render "shared/comment", comment: comment %>
