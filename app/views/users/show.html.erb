@@ -4,6 +4,7 @@
     <h2>Bio</h2>
     <p><%= @user.bio %></p>
   </div>
+  <button class="btn create-post-btn"><%= link_to "Create post", new_user_post_path(@user) %></button>
   <% @posts.each do |post| %>
     <%= render partial: "shared/post", locals: { post: post, show_full_post: false }  %>
   <% end %>

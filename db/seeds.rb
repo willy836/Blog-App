@@ -6,11 +6,10 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-image1 = 'https://user-images.githubusercontent.com/79058364/150398546-6d9d32a8-dc4c-4e26-a6ff-0ff0b4eafe9f.jpg'
-image2 = 'https://user-images.githubusercontent.com/79058364/150398981-d7619766-6bf3-4878-9bc7-b0ef2d33f815.jpg'
-image3 = 'https://user-images.githubusercontent.com/79058364/150375449-6871e044-0e98-4378-8651-08d29f8adbf8.jpg'
-image4 = 'https://user-images.githubusercontent.com/79058364/150375487-d5a82b30-cef1-45b1-be4f-28413e8839a7.jpg'
-image5 = 'https://user-images.githubusercontent.com/79058364/150398570-de44d578-8f17-4150-b7b4-15c085e7d627.jpg'
+image1 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132047/samples/people/smiling-man.jpg'
+image2 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132066/cld-sample.jpg'
+image3 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132047/samples/people/smiling-man.jpg'
+image4 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132066/cld-sample.jpg'
 
 lorem_bio = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nobis sunt harum adipisci vero 
 possimus recusandae fugiat facilis provident? Doloremque.'
@@ -19,10 +18,10 @@ vitae enim veniam fugit non repellat placeat atque id, aliquid cumque autem illu
 provident eaque voluptas asperiores reiciendis facilis dicta. Vel doloremque ea in dolores numquam 
 illum, molestiae nesciunt. Repudiandae, quia a ea dolorem voluptate fuga quod!'
 
-user1 = User.create!(name: 'Michelle Spencer', photo: 'https://unsplash.com/photos/ibncearkcH4', bio: lorem_bio, posts_counter: 0)
-user2 = User.create!(name: 'Mary Smith', photo: 'https://unsplash.com/photos/bDDwMZ8k-ZA', bio: lorem_bio, posts_counter: 0)
-user3 = User.create!(name: 'Hanna Pastova', photo: 'https://unsplash.com/photos/zOxOwsFnifA', bio: lorem_bio, posts_counter: 0)
-user4 = User.create!(name: 'Sebastian Burke', photo: 'https://unsplash.com/photos/bDDwMZ8k-ZA', bio: lorem_bio, posts_counter: 0)
+user1 = User.create!(name: 'John Falcon', photo: image1, bio: lorem_bio, posts_counter: 0)
+user2 = User.create!(name: 'Mary Smith', photo: image2, bio: lorem_bio, posts_counter: 0)
+user3 = User.create!(name: 'Sebastian Burke', photo: image3, bio: lorem_bio, posts_counter: 0)
+user4 = User.create!(name: 'Hanna Pastova', photo: image4, bio: lorem_bio, posts_counter: 0)
 
 post1 = Post.create!(author: user1, title: 'Post One', text: lorem_post, comments_counter: 0, likes_counter: 0)
 post2 = Post.create!(author: user1, title: 'Post Two', text: lorem_post, comments_counter: 0, likes_counter: 0)

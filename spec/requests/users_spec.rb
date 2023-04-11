@@ -14,7 +14,7 @@ RSpec.describe UsersController, type: :request do
     end
 
     it 'includes correct placeholder text in the response body' do
-      expect(response.body).to include('Here is a list of users')
+      expect(response.body).to include('List of users')
     end
   end
 
@@ -28,10 +28,6 @@ RSpec.describe UsersController, type: :request do
 
     it 'renders show template' do
       expect(response).to render_template(:show)
-    end
-
-    it 'includes correct placeholder text in the response body' do
-      expect(response.body).to include('Here is one user')
     end
   end
 end

@@ -24,6 +24,12 @@ a {
   flex-direction: row;
   gap: 50px;
   align-items: center;
+  margin: 0 20px;
+}
+
+.user-img {
+  width: 12%;
+  margin-bottom: 10px;
 }
 
 .user-article {
@@ -31,10 +37,8 @@ a {
   margin: 0 auto;
 }
 
-.user-img {
-  border: 2px solid #555;
-  padding: 30px 0;
-  margin-bottom: 10px;
+.photo {
+  width: 100%;
 }
 
 .name-posts {
@@ -59,8 +63,10 @@ a {
 }
 
 .user_bio {
-  width: 80%;
-  border: 2px solid #555;
+  width: 97%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
   margin: 20px;
 }
 
@@ -78,6 +84,11 @@ a {
   padding: 10px 20px;
   margin-left: 400px;
   margin-top: 20px;
+}
+
+.create-post-btn {
+  margin-left: 20px;
+  margin-top: 0;
 }
 
 .comment_details {
