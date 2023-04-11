@@ -24,6 +24,7 @@ a {
   flex-direction: row;
   gap: 50px;
   align-items: center;
+  margin: 0 20px;
 }
 
 .user-img {
