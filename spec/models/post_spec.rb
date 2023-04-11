@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Post, type: :model do
-  first_user = User.create(name: 'Wilson', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+  first_user = User.create(name: 'John Doe', photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                            bio: 'Hi! I am a web developer', posts_counter: 0)
 
   subject do
