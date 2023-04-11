@@ -29,7 +29,6 @@ RSpec.feature 'posts#index', type: :feature do
     expect(page).to have_css('.cmnt-cntr', text: 'Comments: 1')
     expect(page).to have_css('.likes-cntr', text: 'Likes: 3')
 
-
     expect(page).to have_button('Pagination')
 
     click_link('Post One')
