@@ -7,7 +7,6 @@ RSpec.feature 'users#index', type: :feature do
   before :each do
     @user1 = User.create(name: 'John Doe', photo: IMAGE1, bio: 'Developer from USA.', posts_counter: 10)
     @user2 = User.create(name: 'Jane Doe', photo: IMAGE2, bio: 'Teacher from Poland', posts_counter: 5)
-    
   end
 
   scenario 'user visits index page' do

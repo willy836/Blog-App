@@ -13,7 +13,6 @@ RSpec.describe PostsController, type: :request do
     it 'renders index template' do
       expect(response).to render_template(:index)
     end
-
   end
 
   describe 'GET #show' do
@@ -33,6 +32,5 @@ RSpec.describe PostsController, type: :request do
     it 'renders show template' do
       expect(response).to render_template(:show)
     end
-
   end
 end

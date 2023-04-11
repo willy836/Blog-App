@@ -29,6 +29,5 @@ RSpec.describe UsersController, type: :request do
     it 'renders show template' do
       expect(response).to render_template(:show)
     end
-
   end
 end
