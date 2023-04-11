@@ -2,6 +2,8 @@ require 'rails_helper'
 
 IMAGE = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132047/samples/people/smiling-man.jpg'.freeze
 
+# rubocop:disable Metrics/BlockLength
+
 RSpec.feature 'users#show', type: :feature do
   before :each do
     @user = User.create(name: 'John Doe', photo: IMAGE, bio: 'Developer from USA.', posts_counter: 10)
@@ -64,5 +66,6 @@ RSpec.feature 'users#show', type: :feature do
 
     expect(current_path).to eq(user_posts_path(@user))
   end
-
 end
+
+# rubocop:enable Metrics/BlockLength
