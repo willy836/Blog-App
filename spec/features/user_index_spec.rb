@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-IMAGE1 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132047/samples/people/smiling-man.jpg'
-IMAGE2 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132066/cld-sample.jpg'
+IMAGE1 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132047/samples/people/smiling-man.jpg'.freeze
+IMAGE2 = 'https://res.cloudinary.com/dy6rygowr/image/upload/v1681132066/cld-sample.jpg'.freeze
 
 RSpec.feature 'users#index', type: :feature do
   before :each do
