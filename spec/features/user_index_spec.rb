@@ -15,10 +15,10 @@ RSpec.feature 'users#index', type: :feature do
     # Ensure that the list of users is displayed
     expect(page).to have_css('section')
     expect(page).to have_css('h1.list-heading', text: 'List of users')
-    expect(page).to have_css('article', count: 2)
+    expect(page).to have_css('article', count: 3)
 
     # Ensure that the user details are displayed for each user
-    user1_article = page.all('article')[0]
+    user1_article = page.all('article')[1]
     expect(user1_article).to have_css('h2', text: 'John Doe')
     expect(user1_article).to have_css('p', text: 'Number of posts: 10')
     expect(user1_article).to have_css("img.photo[src=\"#{IMAGE1}\"]")
@@ -28,7 +28,7 @@ RSpec.feature 'users#index', type: :feature do
     visit users_path
 
     # Ensure that clicking on a user link takes us to the user's page
-    user1_article = page.all('article')[0]
+    user1_article = page.all('article')[1]
     within(user1_article) do
       click_link 'John Doe'
     end
