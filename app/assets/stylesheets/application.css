@@ -169,3 +169,37 @@ a {
 .alert {
   color: red;
 }
+
+/* --------------------LOGIN VIEW----------------------- */
+
+.login-container {
+  width: 50%;
+  margin: 30px auto;
+  /* border: 2px solid red; */
+}
+
+.login-h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.field {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+}
+
+.devise-btn {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.actions {
+  margin-bottom: 10px;
+}
