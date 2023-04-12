@@ -163,4 +163,15 @@ a {
   font-size: 18px;
 }
 
+/* -----------------------SIGN UP VIEW---------------------- */
 
+.sign-up-container {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.sign-up-h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0;
+}
