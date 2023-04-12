@@ -175,7 +175,6 @@ a {
 .login-container {
   width: 50%;
   margin: 30px auto;
-  /* border: 2px solid red; */
 }
 
 .login-h2 {
@@ -199,6 +198,7 @@ a {
   padding: 5px;
   font-size: 20px;
 }
+
 /* -----------------------SIGN UP VIEW---------------------- */
 
 .sign-up-container {
