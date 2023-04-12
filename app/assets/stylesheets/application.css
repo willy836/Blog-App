@@ -141,3 +141,26 @@ a {
 }
 
 /* -----------------------NAVBAR------------------- */
+
+
+.nav {
+  background: #888;
+}
+
+.nav-links {
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-link a {
+  color: #fff;
+  font-size: 18px;
+}
+
+
