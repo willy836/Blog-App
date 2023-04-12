@@ -16,7 +16,7 @@ a {
 }
 
 .user-stats {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .user_details {
@@ -24,7 +24,6 @@ a {
   flex-direction: row;
   gap: 50px;
   align-items: center;
-  margin: 0 20px;
 }
 
 .user-img {
@@ -34,7 +33,7 @@ a {
 
 .user-article {
   width: 97%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .photo {
@@ -140,3 +139,5 @@ a {
   border: 2px solid #333;
   border-radius: 5px;
 }
+
+/* -----------------------NAVBAR------------------- */
