@@ -16,7 +16,7 @@ a {
 }
 
 .user-stats {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .user_details {
@@ -24,7 +24,6 @@ a {
   flex-direction: row;
   gap: 50px;
   align-items: center;
-  margin: 0 20px;
 }
 
 .user-img {
@@ -34,7 +33,7 @@ a {
 
 .user-article {
   width: 97%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .photo {
@@ -139,4 +138,76 @@ a {
   padding: 8px;
   border: 2px solid #333;
   border-radius: 5px;
+}
+
+/* -----------------------NAVBAR------------------- */
+
+.nav {
+  background: #888;
+}
+
+.nav-links {
+  padding: 20px;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-link a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+/* --------------------LOGIN VIEW----------------------- */
+
+.login-container {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.login-h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.field {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+}
+
+.devise-btn {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* -----------------------SIGN UP VIEW---------------------- */
+
+.sign-up-container {
+  width: 50%;
+  margin: 30px auto;
+}
+
+.sign-up-h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 0;
 }
