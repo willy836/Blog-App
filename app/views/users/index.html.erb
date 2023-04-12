@@ -1,4 +1,5 @@
 <section>
+  <%= render "shared/nav" %>
   <h1 class="list-heading">List of users</h1>
   <% @users.each do |user| %>
     <%= render "shared/user", user: user %>

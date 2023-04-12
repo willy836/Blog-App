@@ -1,4 +1,5 @@
 <article class="full_post">
+  <%= render "shared/nav" %>
   <%= render partial: "shared/post", locals: { post: @post, show_full_post: true } %>
   <div class="btns-container">
     <%= render "shared/like" %>
