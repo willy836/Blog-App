@@ -18,10 +18,10 @@ vitae enim veniam fugit non repellat placeat atque id, aliquid cumque autem illu
 provident eaque voluptas asperiores reiciendis facilis dicta. Vel doloremque ea in dolores numquam 
 illum, molestiae nesciunt. Repudiandae, quia a ea dolorem voluptate fuga quod!'
 
-user1 = User.create!(name: 'John Falcon', photo: image1, bio: lorem_bio, posts_counter: 0)
-user2 = User.create!(name: 'Mary Smith', photo: image2, bio: lorem_bio, posts_counter: 0)
-user3 = User.create!(name: 'Sebastian Burke', photo: image3, bio: lorem_bio, posts_counter: 0)
-user4 = User.create!(name: 'Hanna Pastova', photo: image4, bio: lorem_bio, posts_counter: 0)
+user1 = User.create!(name: 'John Falcon', email: 'john@email.com', password: 'password', photo: image1, bio: lorem_bio, posts_counter: 0)
+user2 = User.create!(name: 'Mary Smith', email: 'mary@email.com', password: 'password', photo: image2, bio: lorem_bio, posts_counter: 0)
+user3 = User.create!(name: 'Sebastian Burke', email: 'sebastian@email.com', password: 'password', photo: image3, bio: lorem_bio, posts_counter: 0)
+user4 = User.create!(name: 'Hanna Pastova', email: 'hanna@email.com', password: 'password', photo: image4, bio: lorem_bio, posts_counter: 0)
 
 post1 = Post.create!(author: user1, title: 'Post One', text: lorem_post, comments_counter: 0, likes_counter: 0)
 post2 = Post.create!(author: user1, title: 'Post Two', text: lorem_post, comments_counter: 0, likes_counter: 0)
