@@ -161,3 +161,11 @@ a {
   color: #fff;
   font-size: 18px;
 }
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
