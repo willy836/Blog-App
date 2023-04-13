@@ -12,6 +12,6 @@
     </div>
   <% end %>
   <% if can?(:destroy, post) %>
-    <div class="del-post"><%= button_to "Delete Post", user_post_path(post.author, post), method: :delete, class: "btn" %></div>
+    <div class="del-post"><%= button_to "Delete Post", user_post_path(post.author.id, post.id), method: :delete, class: "btn" %></div>
   <% end %>
 </article>
