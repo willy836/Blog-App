@@ -30,7 +30,7 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     if @post.destroy
-      redirect_to user_posts_path(user_id: @post.author_id), notice: 'Post deleted successfully'
+      redirect_to user_posts_path(@post.author_id), notice: 'Post deleted successfully'
     else
       redirect_to user_posts_path, notice: 'An error occurred when deleting the post'
     end
