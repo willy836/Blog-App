@@ -211,3 +211,13 @@ a {
   text-align: center;
   padding: 20px 0;
 }
+
+/* ----------------------authorization------------------ */
+
+.del-post {
+  text-align: center;
+}
+
+.del-post .btn {
+  margin-left: 0;
+}
