@@ -109,7 +109,6 @@ To run tests, run the following command:
 
 👤 **Rashid Menhas**
 
-
 - GitHub: [![RashidMenhas](https://img.shields.io/badge/-RashidMenhas-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/RashidMenhas)
 - Twitter: [![Rashid Menhas](https://img.shields.io/badge/-RashidMenhas-blue?logo=Twitter&logoColor=skyBlue&style=plastic)](https://twitter.com/RashidM83664789)
 - LinkedIn: [![Rashid Menhas](https://img.shields.io/badge/-RashidMenhas-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://www.linkedin.com/in/rashid-menhas/)
@@ -120,9 +119,9 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Controllers specs]**
-- [ ] **[Add Views]**
-- [ ] **[API endpoints]**
+- [ ] **[Render navbar list elements conditionally, if user is signed in or out]**
+- [ ] **[Implement functionality to send confirmation email messages to user]**
+- [ ] **[Implement adding API endpoints]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

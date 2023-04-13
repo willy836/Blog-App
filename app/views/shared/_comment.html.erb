@@ -1,4 +1,7 @@
 <article class="comment_details">
   <p class="comment-author"><%= comment.author.name %>: </p>
   <p class="comment-text"><%= comment.text %></p>
+  <% if can?(:destroy, comment) %>
+    <div class="del-comment"><%= button_to "Delete Comment", user_post_comment_path(comment.author.id, comment.post.id, comment.id), method: :delete, class: "btn" %></div>
+  <% end %>
 </article>
