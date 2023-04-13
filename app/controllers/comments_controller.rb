@@ -9,7 +9,7 @@ class CommentsController < ApplicationController
     @comment.author_id = current_user.id
     @comment.post_id = @post.id
     if @comment.save
-      redirect_to user_post_path(current_user, @post), notice: 'Successfully created a comment!' 
+      redirect_to user_post_path(current_user, @post), notice: 'Successfully created a comment!'
     else
       flash.now[:notice] = 'Failed to create a comment.'
       render :new
