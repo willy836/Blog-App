@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+  
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments)
@@ -24,6 +26,14 @@ class PostsController < ApplicationController
       flash[:error] = 'Failed to create a post.'
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to user_posts_path(user_id: @post.author_id), notice: 'Post deleted successfully'
+    else
+      redirect_to user_posts_path, notice: 'An error occurred when deleting the post'
   end
 
   private
