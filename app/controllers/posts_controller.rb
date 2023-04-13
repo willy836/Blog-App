@@ -20,10 +20,9 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     @post.author_id = current_user.id
     if @post.save
-      flash[:success] = 'Successfully created a post!'
-      redirect_to user_posts_path(current_user)
+      redirect_to user_posts_path(current_user), notice: 'Successfully created a post!'
     else
-      flash[:error] = 'Failed to create a post.'
+      flash.now[:notice] = 'Failed to create a post.'
       render :new
     end
   end
