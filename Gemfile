@@ -76,4 +76,5 @@ end
 
 gem 'cancancan'
 gem 'devise'
+gem 'jwt'
 gem 'rubocop', '>= 1.0', '< 2.0'
