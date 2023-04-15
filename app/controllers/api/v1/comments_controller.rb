@@ -1,13 +1,12 @@
 class Api::V1::CommentsController < Api::V1::ApplicationController
-  before_action :set_post, only: [:show, :create]
-  before_action :set_author, only: [:show, :create]
+  before_action :set_post, only: %i[show create]
+  before_action :set_author, only: %i[show create]
 
   def index
     @comments = @post.comments
     render json: { comments: @comments }, status: :ok
   end
 
-  
   def create
     @comment = @author.comments.new(post: @post, **comment_params)
     if @comment.save
@@ -29,5 +28,5 @@ class Api::V1::CommentsController < Api::V1::ApplicationController
 
   def comment_params
     params.require(:comment).permit(:text)
-  end 
+  end
 end
